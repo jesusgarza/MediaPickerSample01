@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="MediaPickerSample01.MyTestPage"
+	Title="Test Title">
+	<ContentPage.Content>
+			<StackLayout Orientation="Vertical" Padding="5,5,5,0" >
+				<Label Text="{Binding TextMessage}" Font="Medium"></Label>
+				<Button Text="Is it working?" Command="{Binding CmdToVerifyIsWorking}" ></Button>
+				<Button Text="Use MediaPicker" Command="{Binding CmdToUseMediaPicker}" ></Button>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
