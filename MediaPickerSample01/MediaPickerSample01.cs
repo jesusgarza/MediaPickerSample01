@@ -30,8 +30,6 @@ namespace MediaPickerSample01
 			}
 
 			ViewFactory.Register<MyTestPage, MyTestViewModel>();
-			ViewFactory.Register<MyTestPage, MyTest3ViewModel>();
-
 		}
 
 		/// <summary>
@@ -40,7 +38,7 @@ namespace MediaPickerSample01
 		/// <returns>The Main Page.</returns>
 		public static Page GetMainPage()
 		{
-			var mvvm = ViewFactory.CreatePage<MyTest3ViewModel, MyTestPage> ();
+			var mvvm = ViewFactory.CreatePage<MyTestViewModel, MyTestPage> ();
 
 			var mainPage = new NavigationPage((Page)mvvm);
 

@@ -57,36 +57,30 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="XLabs.Ioc">
-      <HintPath>..\packages\XLabs.IoC.2.0.5546\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
-    </Reference>
-    <Reference Include="XLabs.Core">
-      <HintPath>..\packages\XLabs.Core.2.0.5546\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Core.dll</HintPath>
-    </Reference>
     <Reference Include="ExifLib">
       <HintPath>..\packages\ExifLib.PCL.1.0.0\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="XLabs.Ioc">
+      <HintPath>..\packages\XLabs.IoC.2.0.5546.35667\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Core">
+      <HintPath>..\packages\XLabs.Core.2.0.5546.35667\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Core.dll</HintPath>
+    </Reference>
     <Reference Include="XLabs.Platform.Droid">
-      <HintPath>..\packages\XLabs.Platform.2.0.5546\lib\MonoAndroid\XLabs.Platform.Droid.dll</HintPath>
+      <HintPath>..\packages\XLabs.Platform.2.0.5546.35667\lib\MonoAndroid\XLabs.Platform.Droid.dll</HintPath>
     </Reference>
     <Reference Include="XLabs.Platform">
-      <HintPath>..\packages\XLabs.Platform.2.0.5546\lib\MonoAndroid\XLabs.Platform.dll</HintPath>
+      <HintPath>..\packages\XLabs.Platform.2.0.5546.35667\lib\MonoAndroid\XLabs.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Android.Export" />
     <Reference Include="XLabs.Serialization">
-      <HintPath>..\packages\XLabs.Serialization.2.0.5546\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Serialization.dll</HintPath>
+      <HintPath>..\packages\XLabs.Serialization.2.0.5546.35667\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="XLabs.Forms.Droid">
-      <HintPath>..\packages\XLabs.Forms.2.0.5546\lib\MonoAndroid\XLabs.Forms.Droid.dll</HintPath>
+      <HintPath>..\packages\XLabs.Forms.2.0.5546.35667\lib\MonoAndroid\XLabs.Forms.Droid.dll</HintPath>
     </Reference>
     <Reference Include="XLabs.Forms">
-      <HintPath>..\packages\XLabs.Forms.2.0.5546\lib\MonoAndroid\XLabs.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Plugin">
-      <HintPath>..\packages\Xam.Plugin.Media.1.0.0\lib\MonoAndroid10\Media.Plugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Plugin.Abstractions">
-      <HintPath>..\packages\Xam.Plugin.Media.1.0.0\lib\MonoAndroid10\Media.Plugin.Abstractions.dll</HintPath>
+      <HintPath>..\packages\XLabs.Forms.2.0.5546.35667\lib\MonoAndroid\XLabs.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -99,7 +93,8 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\MyTest2ViewModel.cs" />
+    <Compile Include="XLabs\MediaPickerActivity.cs" />
+    <Compile Include="XLabs\MediaPicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -110,7 +105,7 @@
   <ItemGroup>
     <Folder Include="Resources\layout\" />
     <Folder Include="Resources\values\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="XLabs\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
